@@ -57,8 +57,8 @@ export default defineConfig(({ command, mode }) => {
     },
     server: {
       host: '0.0.0.0',
-      port: 3200,
-      open: false,
+      port: 3200, // 前端启动项目端口
+      open: true, // 自动打开浏览器
       proxy: {
         '/api': {
           target: VITE_PROXY_TARGET,
